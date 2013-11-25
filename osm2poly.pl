@@ -47,7 +47,7 @@ my $rels_by_name = {};
 
 # Parse the file
 my $infile = $ARGV[0];
-unless defined $infile {
+unless (defined $infile) {
 	$infile = $0;
 	$infile =~ s/\/.*?$/\/contours.osm/;
 }
